@@ -5,4 +5,5 @@ if status is-interactive
     export https_proxy="http://$hostip:7890"
     export HTTP_PROXY="http://$hostip:7890"
     export HTTPS_PROXY="http://$hostip:7890"
+    eval (ssh-agent -c)
 end

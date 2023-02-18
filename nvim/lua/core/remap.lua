@@ -18,6 +18,10 @@ keymap("n", "<leader><leader>", ":b#<CR>")
 
 keymap("n", "<Enter>", "o<ESC>")
 keymap("i", "jk", "<ESC>")
+keymap("n", "=", "$")
+keymap("n", "<M-0>", "zH")
+keymap("n", "<M-=>", "zL")
+keymap("n", "<M-r>", ":!cargo fmt<CR><ESC>")
 -- -----------------插件-----------------
 -- nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>")
