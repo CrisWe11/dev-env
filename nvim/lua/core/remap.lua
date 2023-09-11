@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 local keymap = vim.keymap.set
 
-keymap("n", "<leader>pv", vim.cmd.Ex)
+-- keymap("n", "<leader>pv", vim.cmd.Ex)
 
 --[[ keymap("v", "J", ":m '>+1<CR>gv=gv") ]]
 --[[ keymap("v", "K", ":m '<-2<CR>gv=gv") ]]
@@ -33,26 +33,26 @@ keymap("n", "<leader>ef", ":NvimTreeFindFile<CR>")
 -- if there is no implement it will hide
 -- when you use action in finder like open vsplit then you can
 -- use <C-t> to jump back
-keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
+-- keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
 
 -- Code action
-keymap({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
+-- keymap({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
 
 -- Rename
-keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
+-- keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
 
 -- Peek Definition
 -- you can edit the definition file in this float window
 -- also support open/vsplit/etc operation check definition_action_keys
 -- support tagstack C-t jump back
-keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>")
+-- keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>")
 
 -- Show cursor diagnostic
 -- also like show_line_diagnostics  support pass ++unfocus
-keymap("n", "<leader>sc", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
+-- keymap("n", "<leader>sc", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
 
 -- Show buffer diagnostic
-keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")
+-- keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")
 
 -- Diagnostic jump can use `<c-o>` to jump back
 keymap("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
@@ -67,11 +67,11 @@ keymap("n", "]E", function()
 end)
 
 -- Toggle Outline
-keymap("n","<leader>o", "<cmd>Lspsaga outline<CR>")
+-- keymap("n","<leader>o", "<cmd>Lspsaga outline<CR>")
 
 -- Hover Doc
 -- if there has no hover will have a notify no information available
 -- to disable it just Lspsaga hover_doc ++quiet
 -- press twice it will jump into hover window
-keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>")
-keymap({"n", "t"}, "<A-d>", "<cmd>Lspsaga term_toggle<CR>")
+-- keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+-- keymap({"n", "t"}, "<A-d>", "<cmd>Lspsaga term_toggle<CR>")

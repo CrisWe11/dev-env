@@ -57,6 +57,7 @@ return require('packer').startup(function(use)
     -- lsp友好的进度条
     use({
         "j-hui/fidget.nvim",
+        tag="legacy",
         config = function()
             require("fidget").setup()
         end
