@@ -1,2 +1,0 @@
--- local nord = require("nord")
-
